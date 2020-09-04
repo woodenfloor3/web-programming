@@ -1,0 +1,123 @@
+<html>
+<head>
+
+  <title>Feedback</title>
+
+  <link rel="stylesheet" href="Fate.css">
+  <link rel="stylesheet" href="Feedback.css">
+
+  <script>
+
+  function validate()
+  {
+    var fn, ln,email;
+
+
+    fn = document.getElementById("fname").value;
+    ln = document.getElementById("lname").value;
+    email = document.getElementById("email").value;
+
+    if (fn!="" && ln!="")
+      {
+        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(Feedback.email.value))
+        {
+          alert("Submitted Feedback successfully")
+        }
+        else {
+          alert("You have entered an invalid email address!")
+        }
+      }
+    else
+      {
+        alert("Please fill all the fields!");
+      }
+
+  }
+
+  </script>
+
+</head>
+<body>
+
+  <map name="fates">
+    <area target="_self" alt="Fates" title="Fates" href="FateZero.html" coords="188,1,0,69" shape="rect">
+  </map>
+
+  <nav>
+
+    
+	<img  src='fatestaynight.png' alt='Fate_Stay_Night'>
+	<img  src='FateZero.jpg' alt='FateZero' usemap="#fates">
+
+    <ul>
+
+      <li><a class="active">Home</a></li>
+      <li><a href="fate_characters.html">Characters</a></li>
+      <li><a href="fate_about.html">About</a></li>
+      <li><a href="fate_feedback.html">Feedback</a></li>
+    </ul>
+
+  </nav>
+
+  <div style="overflow: hidden;">
+
+    <p style="float: right;" id="time"></p>
+    <p style="float: right;">Date:</p>
+
+  </div>
+
+  <br>
+  <br>
+
+  <center>
+      <font color=#f2f2f2 face="sans-serif">
+
+        <form name='Feedback' action="" method="post">
+
+        <div class="main_container">
+
+          <center>
+
+          <label><p align='left'> First Name</p></label>
+          <input type="text" placeholder="Enter your First Name" name="fname" id="fname" required>
+
+          <br>
+          <br>
+
+          <label><p align='left'>Last Name</p></label>
+          <input type="text" placeholder="Enter your Last Name" name="lname" id="lname" required>
+
+          <br>
+          <br>
+
+          <label><p align='left'>Email ID</p></label>
+          <input type="email" placeholder="Enter your Email ID" name="email" id="email" required>
+
+          <br>
+          <br>
+
+          <label><p align='left'>What can we Improve?</p></label>
+          <textarea placeholder="Enter your Feedback" rows="5" cols="35" id="imprv"></textarea>
+
+          <br>
+
+          <button type="button" value="Login" id="submit" onclick="validate()">Submit</button>
+          <button type="reset" class="resetbtn">Reset</button>
+
+          </center>
+
+        </div>
+
+        </form>
+
+      </font>
+
+  </center>
+
+  <br>
+  <br>
+
+  <script src="date.js"></script>
+
+</body>
+</html>

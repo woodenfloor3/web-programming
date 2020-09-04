@@ -1,0 +1,76 @@
+
+/* body */
+body {
+  background-image: url('bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: sans-serif;
+  backdrop-filter: blur(6px);
+}
+
+/* all elements */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* navigation bar */
+nav {
+  background: rgb(128,0,128);
+  background: linear-gradient(0deg, rgba(128,0,128) 1%, rgba(128,0,128) 100%);
+  height: 80px;
+  width: 100%;
+}
+
+/* navigation bar unordered list alignment */
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+/* navigation bar unordered list items alignment */
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+/* navigation bar unordered list items anchor tag alignment */
+nav ul li a {
+  color: White;
+  font-size: 17px;
+  padding: 6px 13px;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+/* navigation bar unordered list items anchor tag alignment */
+a.active,a:hover{
+  background: #991f00;
+  trasnsition: .5s;
+}
+
+/* border for images */
+.border {
+  border: 2px solid #555;
+}
+
+/* text background blur effect */
+.text-blur {
+background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+color: white;
+font-weight: bold;
+border: 3px solid #f1f1f1;
+width: 80%;
+padding: 20px;
+text-align: center;
+}
+
+
+/* Add style to paragraph tag */
+p {
+font-weight: bold;
+}
